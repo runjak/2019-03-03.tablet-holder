@@ -1,7 +1,8 @@
 tolerance = 1;
 cable_radius = 2 + tolerance/2;
-size = [198.5, 120, 10.45];
 margin = 4;
+tablet_size = [198.5, 120, 10.45];
+size = [tablet_size[0] + 2*margin + tolerance, tablet_size[1], tablet_size[2]];
 
 module frame(frame_size, border) {
   difference() {
