@@ -30,8 +30,7 @@ module backplate() {
         i*(size[0] - 2 - backplate_border + 10)/2,
         size[1]/2 - backplate_border + margin,
         0])
-      rotate([0, 90, 0])
-      cylinder(r=cable_radius, h=30, center=true);
+      cube([30,5,5], center=true);
     }
   }
 }
