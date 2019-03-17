@@ -36,7 +36,7 @@ module backplate() {
 }
 
 module sides() {
-  side_height = size[2] + margin;
+  side_height = size[2] + margin + tolerance;
 
   difference() {
     frame([
@@ -78,7 +78,7 @@ module top() {
 
 module holder() {
   union() {
-    translate([0,0,(size[2] + margin)/2])
+    translate([0,0,(size[2] + margin)/2 + tolerance])
     top();
 
     translate([0,0,margin/2])
